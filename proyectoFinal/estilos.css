@@ -1,0 +1,217 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100vh;
+}
+.contenedor .header {
+  width: 80%;
+  margin: 0px 0px 0px 20%;
+  position: fixed;
+  border-bottom: 1px solid gold;
+  background-color: white;
+}
+.contenedor .main {
+  margin-left: 20%;
+  padding-top: 80px;
+}
+.contenedor .side {
+  width: 20%;
+  height: 89vh;
+  position: fixed;
+  margin: 0px 0px 0px 0px;
+}
+.contenedor .reproductor {
+  width: 100%;
+  height: 80px;
+  margin: 370px 0px 0px 0px;
+  position: fixed;
+  border-top: 1px solid gold;
+  background-color: white;
+}
+
+.contenedor .header {
+  height: 80px;
+  align-items: center;
+  display: flex;
+}
+.contenedor .header .buscador {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 50%;
+}
+.contenedor .header .buscador__img {
+  width: 25px;
+  margin-right: 10px;
+}
+.contenedor .header .buscador .buscar {
+  font-size: 26px;
+  height: 50px;
+  border: 0px;
+  outline: none;
+  line-height: 50px;
+}
+.contenedor .header .buscador .search {
+  width: 80px;
+  height: 40px;
+  background-color: #1460fa;
+  font-size: 16px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.contenedor .header .buscador .search:hover {
+  cursor: pointer;
+}
+.contenedor .header .menu {
+  margin: 0px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor .header .menu li {
+  width: 30%;
+  list-style: none;
+}
+.contenedor .header .menu li p {
+  font-size: 20px;
+}
+.contenedor .header__img {
+  margin-right: 15px;
+  width: 30px;
+}
+.contenedor .header__enlace {
+  color: black;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+.contenedor .side {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid gold;
+  grid-area: side;
+}
+.contenedor .side .portada-img {
+  width: 80%;
+  border-radius: 5px;
+}
+.contenedor .side .logo {
+  margin: 15px 0px;
+  display: flex !important;
+  text-decoration: none;
+}
+.contenedor .side .logo__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.contenedor .side .logo__texto {
+  font-size: 25px;
+  color: #ad0919;
+  line-height: 40px;
+}
+.contenedor .side__img {
+  width: 15%;
+  height: 30px;
+  margin-right: 15px;
+}
+.contenedor .side__p {
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+}
+.contenedor .side__p:hover {
+  color: #ad0919;
+}
+.contenedor .side .carpetas {
+  height: 60%;
+}
+.contenedor .side .carpetas .enlace {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.contenedor .side .carpetas .enlace .barra {
+  height: 30px;
+  width: 5px;
+  background-color: #ad0919;
+}
+.contenedor .side .play {
+  text-decoration: none;
+  cursor: pointer;
+}
+.contenedor .side .play #checkplay {
+  display: none;
+}
+.contenedor .side .play #checkplay:checked ~ .playlist {
+  background-color: #ad0919;
+  width: 100%;
+  height: 50px;
+}
+.contenedor .main {
+  scroll-behavior: inherit;
+}
+.contenedor .main .lista {
+  width: 90%;
+  margin: 25px auto 0px;
+}
+.contenedor .main .lista__titulo {
+  font-size: 28px;
+  color: #ad0919;
+  margin-bottom: 10px;
+}
+.contenedor .main .lista__separador {
+  border: 1px solid #ad0919;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contenedor .main .lista .carousel__canciones {
+  display: flex;
+}
+.contenedor .main .lista .carousel__elemento {
+  margin: 0px 10px 0px 0px;
+}
+.contenedor .main .lista .carousel__lista {
+  width: 92%;
+}
+.contenedor .main .lista .carousel__before, .contenedor .main .lista .carousel__next {
+  margin-top: 35px;
+  height: 50px;
+  width: 3%;
+  border: none;
+  border-radius: 5px;
+  background-color: #1460fa;
+  color: white;
+}
+.contenedor .main .lista .carousel .card {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.contenedor .main .lista .carousel .card img {
+  width: 230px;
+}
+.contenedor .main .lista .carousel .card__play {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 90px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  border: 1px solid #ccc;
+  border-radius: 99px;
+}
+.contenedor .main .lista .carousel .card__play .fa-play {
+  margin-left: 3px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

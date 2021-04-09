@@ -1,0 +1,12 @@
+Archivo llamado ejercicio 1.
+Podran encontrar algunas practicas con metodos de javascript y un pequeño ejercicio sobre como convertir de binario a decimal.
+
+pilas:
+Es una pequeña calculadora que realice utilizando pilas y expresiones infijas, acepta simbolos algebraicos como:
++
+-
+*
+/
+()
+
+El resultado se muestra por medio de la consola.

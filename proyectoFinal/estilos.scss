@@ -1,0 +1,230 @@
+$border: gold;
+$fondo: #ad0919;
+$boton: #1460fa;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+//POSICIONAMIENTO DEL CONTENEDOR Y SUS ELEMETOS
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  .header{
+    width: 80%;
+    margin: 0px 0px 0px 20%;
+    position: fixed;
+    border-bottom: 1px solid $border;
+    background-color: white;
+  }
+  .main{
+    margin-left: 20%;
+    padding-top: 80px;
+  }
+  .side{
+    width: 20%;
+    height: 89vh;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+  }
+  .reproductor{
+    width: 100%;
+    height: 80px;
+    margin: 370px 0px 0px 0px;
+    position: fixed;
+    border-top: 1px solid $border;
+    background-color:white;
+  }
+ 
+
+}
+
+//ESTILOS DE LOS ELEMENTOS
+.contenedor {
+  .header {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    .buscador {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      width: 50%;
+      &__img {
+        width: 25px;
+        margin-right: 10px;
+      }
+      .buscar {
+        font-size: 26px;
+        height: 50px;
+        border: 0px;
+        outline: none;
+        line-height: 50px;
+      }
+      .search {
+        width: 80px;
+        height: 40px;
+        background-color: $boton;
+        font-size: 16px;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      .search:hover {
+        cursor: pointer;
+      }
+    }
+    .menu {
+      margin: 0px;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      li {
+        width: 30%;
+        list-style: none;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    &__img {
+      margin-right: 15px;
+      width: 30px;
+    }
+    &__enlace {
+      color: black;
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+    }
+  }
+  .side {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid $border;
+    grid-area: side;
+    .portada-img {
+      width: 80%;
+      border-radius: 5px;
+    }
+    .logo {
+      margin: 15px 0px;
+      display: flex !important;
+      text-decoration: none;
+      &__img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+      &__texto {
+        font-size: 25px;
+        color: $fondo;
+        line-height: 40px;
+      }
+    }
+    &__img {
+      width: 15%;
+      height: 30px;
+      margin-right: 15px;
+    }
+    &__p {
+      color: black;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__p:hover {
+      color: $fondo;
+    }
+    .carpetas {
+      height: 60%;
+      .enlace {
+        margin: 15px 0px;
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        .barra {
+          height: 30px;
+          width: 5px;
+          background-color: $fondo;
+        }
+      }
+    }
+    .play {
+      text-decoration: none;
+      cursor: pointer;
+      #checkplay {
+        display: none;
+      }
+      #checkplay:checked ~ .playlist {
+        background-color: $fondo;
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+  .main {
+    scroll-behavior:inherit;
+      .lista{
+          width: 90%;
+          margin: 25px auto 0px; 
+          &__titulo{
+              font-size: 28px;
+              color: $fondo;
+              margin-bottom: 10px;
+          }
+          &__separador{
+                border: 1px solid $fondo;
+                border-radius: 5px;
+                margin-bottom: 20px;
+          }
+          .carousel{
+              &__canciones{
+                  display: flex;
+              }
+              &__elemento{
+                  margin: 0px 10px 0px 0px;
+              }
+              &__lista{
+                  width: 92%;
+              }
+              &__before{
+                margin-top: 35px;
+                height: 50px;
+                width: 3%;
+                border:none;
+                border-radius: 5px;
+                background-color: $boton;
+                color: white;
+              }
+              &__next{
+                @extend .carousel__before;  
+              }
+              .card{
+                  margin-right: 20px;
+                  cursor: pointer;
+                  img{
+                    width: 230px;
+                  }
+              &__play{
+                position: absolute;
+                margin-top: 40px;
+                margin-left: 90px;
+                width: 50px;
+                height: 50px;
+                background-color:   black;
+                color: white;
+                opacity: .8;
+                border: 1px solid #ccc;
+                border-radius: 99px;
+                .fa-play{
+                  margin-left: 3px;
+                }
+              }
+              }
+          }
+      }
+  }
+  
+}
